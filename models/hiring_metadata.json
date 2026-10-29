@@ -1,0 +1,69 @@
+{
+    "target_column": "Hiring_Outcome",
+    "feature_columns": [
+        "Job_Role",
+        "Education_Level",
+        "Relevant_Experience_Years",
+        "Technical_Score",
+        "Interview_Score",
+        "Coding_Test_Score",
+        "Required_Skills_Match_Percent",
+        "Communication_Score",
+        "Relevant_Certifications_Count",
+        "Relevant_Projects_Count",
+        "Notice_Period_Days",
+        "Expected_Salary_LPA",
+        "Offered_Salary_Budget_LPA",
+        "Resume_Job_Similarity"
+    ],
+    "categorical_columns": [
+        "Job_Role",
+        "Education_Level"
+    ],
+    "numeric_columns": [
+        "Relevant_Experience_Years",
+        "Technical_Score",
+        "Interview_Score",
+        "Coding_Test_Score",
+        "Required_Skills_Match_Percent",
+        "Communication_Score",
+        "Relevant_Certifications_Count",
+        "Relevant_Projects_Count",
+        "Notice_Period_Days",
+        "Expected_Salary_LPA",
+        "Offered_Salary_Budget_LPA",
+        "Resume_Job_Similarity"
+    ],
+    "numeric_medians": {
+        "Relevant_Experience_Years": 3.1,
+        "Technical_Score": 67.4,
+        "Interview_Score": 66.2,
+        "Coding_Test_Score": 63.150000000000006,
+        "Required_Skills_Match_Percent": 69.8,
+        "Communication_Score": 69.2,
+        "Relevant_Certifications_Count": 1.0,
+        "Relevant_Projects_Count": 2.0,
+        "Notice_Period_Days": 30.0,
+        "Expected_Salary_LPA": 6.1,
+        "Offered_Salary_Budget_LPA": 8.149999999999999,
+        "Resume_Job_Similarity": 0.11899768590048357
+    },
+    "text_columns": [
+        "Resume_Text",
+        "Job_Description"
+    ],
+    "nlp_feature": "Resume_Job_Similarity",
+    "threshold": 0.5799999999999997,
+    "random_state": 42,
+    "test_size": 0.2,
+    "validation_size": 0.2,
+    "model_type": "CatBoostClassifier with TF-IDF cosine similarity",
+    "best_hyperparameters": {
+        "random_strength": 2,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "iterations": 400,
+        "depth": 6
+    },
+    "synthetic_data_warning": "If trained on synthetic data, metrics do not establish real-world hiring performance."
+}

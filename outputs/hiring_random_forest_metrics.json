@@ -1,0 +1,21 @@
+{
+    "model": "Random Forest + TF-IDF + SVD",
+    "accuracy": 0.75,
+    "precision": 0.3333333333333333,
+    "recall": 0.3157894736842105,
+    "f1_score": 0.32432432432432434,
+    "roc_auc": 0.6718287488267994,
+    "pr_auc": 0.3167337967100209,
+    "best_cv_f1": 0.2759894974659583,
+    "best_parameters": {
+        "n_estimators": 200,
+        "min_samples_split": 15,
+        "min_samples_leaf": 2,
+        "max_features": "log2",
+        "max_depth": 10,
+        "class_weight": "balanced"
+    },
+    "train_rows": 1800,
+    "validation_rows": 600,
+    "test_rows": 600
+}

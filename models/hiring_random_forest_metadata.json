@@ -1,0 +1,63 @@
+{
+    "model_name": "Random Forest + TF-IDF + SVD",
+    "target_column": "Hiring_Outcome",
+    "target_mapping": {
+        "hired": 1,
+        "not hired": 0
+    },
+    "positive_class": 1,
+    "negative_class": 0,
+    "text_columns": [
+        "Resume_Text",
+        "Job_Description"
+    ],
+    "structured_columns": [
+        "Job_Role",
+        "Education_Level",
+        "Relevant_Experience_Years",
+        "Technical_Score",
+        "Interview_Score",
+        "Coding_Test_Score",
+        "Required_Skills_Match_Percent",
+        "Communication_Score",
+        "Relevant_Certifications_Count",
+        "Relevant_Projects_Count",
+        "Notice_Period_Days",
+        "Expected_Salary_LPA",
+        "Offered_Salary_Budget_LPA"
+    ],
+    "numeric_columns": [
+        "Relevant_Experience_Years",
+        "Technical_Score",
+        "Interview_Score",
+        "Coding_Test_Score",
+        "Required_Skills_Match_Percent",
+        "Communication_Score",
+        "Relevant_Certifications_Count",
+        "Relevant_Projects_Count",
+        "Notice_Period_Days",
+        "Expected_Salary_LPA",
+        "Offered_Salary_Budget_LPA"
+    ],
+    "categorical_columns": [
+        "Job_Role",
+        "Education_Level"
+    ],
+    "dropped_columns": [
+        "Hiring_Outcome",
+        "Application_ID",
+        "Application_Date",
+        "Application_Status"
+    ],
+    "svd_components": 30,
+    "random_state": 42,
+    "threshold": 0.5,
+    "best_parameters": {
+        "n_estimators": 200,
+        "min_samples_split": 15,
+        "min_samples_leaf": 2,
+        "max_features": "log2",
+        "max_depth": 10,
+        "class_weight": "balanced"
+    }
+}

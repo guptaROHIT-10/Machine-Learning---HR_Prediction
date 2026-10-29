@@ -1,0 +1,17 @@
+{
+    "model": "Logistic Regression + TF-IDF + SVD",
+    "accuracy": 0.6466666666666666,
+    "precision": 0.304,
+    "recall": 0.6666666666666666,
+    "f1_score": 0.4175824175824176,
+    "roc_auc": 0.719803624287055,
+    "pr_auc": 0.3887525992417013,
+    "best_cv_f1": 0.4078915505945446,
+    "best_parameters": {
+        "C": 0.01,
+        "class_weight": "balanced"
+    },
+    "train_rows": 1800,
+    "validation_rows": 600,
+    "test_rows": 600
+}
